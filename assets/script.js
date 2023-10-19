@@ -81,17 +81,30 @@ function getRandomInt() {
 }
 
 let a = 0;
-let card = document.querySelector(".card .content");
+let cardFront = document.querySelector(".flip-card-front");
+let cardBack = document.querySelector(".flip-card-back");
 let i = getRandomInt();
-card.innerHTML = grafici[i].nome;
+cardFront.innerHTML = grafici[i].nome;
+cardBack.innerHTML = '<img src="'+grafici[i].img+'">';
 
-card.addEventListener("click", function(){
-    if(a==0){
-        a = 1;
-        card.innerHTML = '<img src="'+grafici[i].img+'">'
+let next = document.querySelector(".next")
+next.addEventListener("click", function(){
+    i = getRandomInt();
+    cardFront.innerHTML = grafici[i].nome;
+    cardBack.innerHTML = '<img src="'+grafici[i].img+'">';
+});
+
+function fattoriale(n){
+    if(n>0){
+        return n*fattoriale(n-1);
     }else{
-        a = 0;
-        i = getRandomInt();
-        card.innerHTML = grafici[i].nome;
+        return 1;
     }
-  });
+}
+
+console.log(fattoriale(6));
+
+
+
+
+
