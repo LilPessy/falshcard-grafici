@@ -85,9 +85,6 @@ body{
 
 
 @media (max-width:676px) {
-    .flip-card:active .flip-card-inner {
-        transform: rotateY(180deg);
-      }
 
       .flip-card {
         background-color: transparent;
