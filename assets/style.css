@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -53,7 +54,7 @@ body{
   }
   
   .flip-card-front {
-    background-color: #2980b9;
+    background: url("./img/viterbo.png");
     color: black;
     font-size: 30px;
     display: flex;
@@ -83,3 +84,32 @@ body{
 }
 
 
+@media (max-width:676px) {
+    .flip-card:active .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card {
+        background-color: transparent;
+        width: 200px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-back img{
+        max-width: 200px;
+        max-height: 300px;
+        object-fit: contain;
+    }
+
+    .flip-card-front {
+        background: url("./img/viterbo.png");
+        background-size: contain;
+        color: black;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+}

@@ -1,12 +1,12 @@
 let grafici =[
     {
         id: 1,
-        nome: "coseno", 
+        nome: "Coseno", 
         img:"./assets/img/coseno.png",
     },
     {
         id: 2,
-        nome: "cotangente", 
+        nome: "Cotangente", 
         img:"./assets/img/cotangente.png",
     },
     {
@@ -56,22 +56,22 @@ let grafici =[
     },
     {
         id: 11,
-        nome: "seno", 
+        nome: "Seno", 
         img:"./assets/img/seno.png",
     },
     {
         id: 12,
-        nome: "tangente", 
+        nome: "Tangente", 
         img:"./assets/img/tangente.png",
     },
     {
         id: 13,
-        nome: "valore assoluto di -x", 
+        nome: "Valore assoluto di -x", 
         img:"./assets/img/valore assoluto di -x.png",
     },
     {
         id: 14,
-        nome: "valore assoluto di x", 
+        nome: "Valore assoluto di x", 
         img:"./assets/img/valore assoluto di x.png",
     },
 ];
@@ -94,7 +94,7 @@ next.addEventListener("click", function(){
     cardBack.innerHTML = '<img src="'+grafici[i].img+'">';
 });
 
-function fattoriale(n){
+/*function fattoriale(n){
     if(n>0){
         return n*fattoriale(n-1);
     }else{
@@ -102,9 +102,6 @@ function fattoriale(n){
     }
 }
 
-console.log(fattoriale(6));
+console.log(fattoriale(6));*/
 
-
-
-
-
+ 
